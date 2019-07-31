@@ -33,8 +33,8 @@ void quick_sort(int A[], int n){
 			j++;
 		}
 	}
-	
-	quick_sort(A, j);
+	swap(A, A+j-1);
+	quick_sort(A, j-1);
 	quick_sort(A+j, n-j);
 	
 	return;
